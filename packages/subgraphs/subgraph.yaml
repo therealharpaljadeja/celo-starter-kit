@@ -1,0 +1,23 @@
+specVersion: 0.0.4
+schema:
+    file: ./schema.graphql
+dataSources:
+    - kind: ethereum
+      name: Greeter
+      network: celo-alfajores
+      source:
+          address: "0x5b6C188673A7157b50F0d73A07f62cB24Cb0133b"
+          abi: Greeter
+      mapping:
+          kind: ethereum/events
+          apiVersion: 0.0.6
+          language: wasm/assemblyscript
+          entities:
+              - Update
+          abis:
+              - name: Greeter
+                file: ./abis/alfajores/Greeter.json
+          eventHandlers:
+              - event: NewGreeting(string,address)
+                handler: handleNewGreeting
+          file: ./mapping.ts

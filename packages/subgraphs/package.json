@@ -1,0 +1,15 @@
+{
+    "name": "@celo-starter-kit/subgraphs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "graph build",
+        "codegen": "graph codegen"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@graphprotocol/graph-ts": "^0.30.0"
+    }
+}

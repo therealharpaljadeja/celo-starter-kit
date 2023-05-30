@@ -1,0 +1,35 @@
+{
+    "name": "celo-starter-kit",
+    "version": "1.0.0",
+    "description": "Custom Celo Composer project.",
+    "private": true,
+    "author": "Celo",
+    "license": "MIT",
+    "scripts": {
+        "react-app:dev": "yarn workspace @celo-starter-kit/react-app dev",
+        "react-app:build": "yarn workspace @celo-starter-kit/react-app build",
+        "react-app:start": "yarn workspace @celo-starter-kit/react-app start",
+        "react-app:lint": "yarn workspace @celo-starter-kit/react-app lint",
+        "hardhat:test": "yarn workspace @celo-starter-kit/hardhat test",
+        "hardhat:test-local": "yarn workspace @celo-starter-kit/hardhat test-local",
+        "hardhat:deploy": "yarn workspace @celo-starter-kit/hardhat deploy",
+        "hardhat:deploy-local": "yarn workspace @celo-starter-kit/hardhat deploy-local",
+        "subgraphs:build": "yarn workspace @celo-starter-kit/subgraphs build",
+        "subgraphs:codegen": "yarn workspace @celo-starter-kit/subgraphs codegen"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/celo-org/celo-composer.git"
+    },
+    "bugs": {
+        "url": "https://github.com/celo-org/celo-composer/issues"
+    },
+    "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+    "workspaces": [
+        "packages/*"
+    ],
+    "keywords": [
+        "celo-composer",
+        "celo"
+    ]
+}
